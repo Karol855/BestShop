@@ -24,3 +24,7 @@ a {
 body {
     font-family: var(--font-open-sans);
 }
+.container {
+    width: 1352px;
+    margin: 0 auto;
+}
