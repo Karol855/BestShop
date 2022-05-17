@@ -2,6 +2,7 @@
 :root {
     --color-primary: #08A6E4;
     --color-primary-shadow: rgba(7, 172, 230, .16);
+    --color-grey-shadow: #00000029;
     --color-redish: #FB3B64;
     --color-green:#55DFB4;
     --color-black: #000000;
@@ -27,4 +28,55 @@ body {
 .container {
     width: 1352px;
     margin: 0 auto;
+}
+/****   added header section styling   ****/
+header {
+    width: 100vw;
+    background-color: var(--color-white);
+    box-shadow: var(--color-grey-shadow) 0 -3px 6px;
+}
+.header__section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-bottom: 130px;
+}
+/****  logo   ****/
+.logo {
+    font-family: var(--font-raleway);
+    font-weight: 300;
+    color: var(--color-primary);
+}
+.logo:focus {
+    outline: none;
+}
+.header__logo {
+    font-size: 2rem;
+}
+/**** navigation  ****/
+.header__nav {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.6875rem;
+}
+.nav__list {
+    display: flex;
+    gap: 95px;
+}
+.nav__link {
+    color: var(--color-grey);
+    letter-spacing: 3.28px;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+.nav__link:focus {
+    outline: none;
+}
+.nav__link:hover {
+    color: var(--color-black);
+    border-bottom: 4px solid var(--color-primary);
+    padding-bottom: 25px;
+    cursor: pointer;
 }
