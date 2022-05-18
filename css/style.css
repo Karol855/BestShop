@@ -31,7 +31,7 @@ body {
 }
 /****   added header section styling   ****/
 header {
-    width: 100vw;
+    height: 70px;
     background-color: var(--color-white);
     box-shadow: var(--color-grey-shadow) 0 -3px 6px;
 }
@@ -39,9 +39,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    margin-bottom: 130px;
+    height: 100%;
 }
 /****  logo   ****/
 .logo {
@@ -67,9 +65,8 @@ header {
 }
 .nav__link {
     color: var(--color-grey);
-    letter-spacing: 3.28px;
-    padding-left: 11px;
-    padding-right: 11px;
+    letter-spacing: 0.205rem;
+    padding: 25px 11px 25px;
 }
 .nav__link:focus {
     outline: none;
@@ -77,7 +74,6 @@ header {
 .nav__link:hover {
     color: var(--color-black);
     border-bottom: 4px solid var(--color-primary);
-    padding-bottom: 25px;
     cursor: pointer;
 }
 /****   added opening section styling   ****/
@@ -100,6 +96,7 @@ header {
     line-height: 3.5625rem;
     color: var(--color-black);
     margin-bottom: 20px;
+    margin-top: 130px;
 }
 .opening__text {
     font-family: var(--font-open-sans);
