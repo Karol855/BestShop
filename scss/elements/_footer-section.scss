@@ -1,0 +1,37 @@
+@use "sass:map";
+
+footer {
+  background-color: var(--color-light-grey);
+  box-shadow: var(--color-grey-shadow) 0 -5px 40px;
+  height: 89px;
+}
+.footer__container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__logo--container {
+  display: flex;
+  flex-direction: column;
+}
+.footer__logo {
+  font-size: 1.625rem;
+  line-height: 1.875rem;
+  text-align: left;
+  margin-bottom: 6.52px;
+}
+.footer__copy {
+  font-family: var(--font-open-sans);
+  font-weight: 400;
+  font-size: 0.6875rem;
+  line-height: 0.9375rem;
+  color: var(--color-grey);
+  text-align: left;
+}
+.footer__icons {
+  display: flex;
+}
+.twitter {
+  margin-right: 20px;
+}
