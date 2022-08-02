@@ -1,3 +1,4 @@
+@import "scss/settings/fonts";
 /****   >>>>>       added simple reset and helpers          <<<<<     ****/
 * {
   box-sizing: border-box;
@@ -9,4 +10,8 @@ a {
 }
 body {
   font-family: $font-open-sans;
+}
+.container {
+  width: 1352px;
+  margin: 0 auto;
 }

@@ -1,7 +1,7 @@
 @use "sass:map";
 
 .pricing {
-  background-color: var(--color-white);
+  background-color: map.get($colors, color-white);
 }
 .pricing__container {
   width: 1266px;
@@ -12,12 +12,12 @@
 }
 /**** pricing headline  ****/
 .pricing__headline {
-  font-family: var(--font-raleway);
+  font-family: $font-raleway;
   font-weight: 400;
   font-size: 2.25rem;
   line-height: 2.625rem;
   text-align: center;
-  color: var(--color-black);
+  color: map.get($colors, color-black);
   margin-bottom: 50px;
 }
 /**** pricing columns  ****/
@@ -36,16 +36,16 @@
   align-items: center;
 }
 .pricing__box:first-child {
-  border: 1px solid var(--color-redish);
+  border: 1px solid map.get($colors, color-redish);
 }
 .pricing__box:nth-child(2) {
-  border: 1px solid var(--color-primary);
+  border: 1px solid map.get($colors, color-primary);
   width: 405px;
   height: 500px;
-  box-shadow: var(--color-primary-shadow) 5px 10px 27px;
+  box-shadow: map.get($colors, color-primary-shadow) 5px 10px 27px;
 }
 .pricing__box:last-child {
-  border: 1px solid var(--color-green);
+  border: 1px solid map.get($colors, color-green);
 }
 /**** pricing package  ****/
 .pricing__package {
@@ -55,7 +55,7 @@
   align-items: center;
 }
 .pricing__type {
-  font-family: var(--font-raleway);
+  font-family: $font-raleway;
   font-weight: 700;
   font-size: 1.25rem;
   margin-bottom: 14px;
@@ -65,31 +65,31 @@
   font-size: 1.3125rem;
 }
 .pricing__price {
-  font-family: var(--font-open-sans);
+  font-family: $font-open-sans;
   font-weight: 300;
   font-size: 2.875rem;
   /*line-height: 0.125rem;*/
 }
 .pricing__box:first-child > .pricing__package > .pricing__price {
-  color: var(--color-redish);
+  color: map.get($colors, color-redish);
   margin-bottom: 69px;
   padding: 18px 0;
 }
 .pricing__box:nth-child(2) > .pricing__package > .pricing__price {
-  color: var(--color-primary);
+  color: map.get($colors, color-primary);
   margin-bottom: 5px;
   padding: 24px 0;
 }
 .pricing__box:last-child > .pricing__package > .pricing__price {
-  color: var(--color-green);
+  color: map.get($colors, color-green);
   margin-bottom: 5px;
   padding: 18px 0;
 }
 .pricing__limit {
-  font-family: var(--font-raleway);
+  font-family: $font-raleway;
   font-weight: 700;
   font-size: 12px;
-  color: var(--color-black);
+  color: map.get($colors, color-black);
 }
 .pricing__box:nth-child(2) > .pricing__package > .pricing__limit {
   margin-bottom: 61px;
@@ -108,11 +108,11 @@
   margin-bottom: 27px;
 }
 .pricing__items {
-  font-family: var(--font-open-sans);
+  font-family: $font-open-sans;
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 2.5625rem;
-  color: var(--color-black);
+  color: map.get($colors, color-black);
 }
 /**** checkmark  ****/
 .pricing__box:first-child > .pricing__details-list > .pricing__items:nth-last-child(n+3)::before {
@@ -138,21 +138,21 @@
 }
 /**** buttons  ****/
 .pricing_buttons {
-  font-family: var(--font-open-sans);
+  font-family: $font-open-sans;
   font-weight: 700;
   font-size: 0.8125rem;
-  color: var(--color-white);
+  color: map.get($colors, color-white);
   border-radius: 23px;
   padding: 16px 57px;
 }
 .red__button {
-  background-color: var(--color-redish);
+  background-color: map.get($colors, color-redish);
 }
 .blue__button {
-  background-color: var(--color-primary);
+  background-color: map.get($colors, color-primary);
   padding: 16px 64px;
-  box-shadow: var(--color-primary-shadow) 5px 10px 14px;
+  box-shadow: map.get($colors, color-primary-shadow) 5px 10px 14px;
 }
 .green__button {
-  background-color: var(--color-green);
+  background-color: map.get($colors, color-green);
 }

@@ -1,7 +1,7 @@
 @use "sass:map";
 
 .benefits {
-  background-color: var(--color-light-grey);
+  background-color: map.get($colors, color-light-grey);
 }
 .benefits__container {
   width: 1124px;
@@ -15,8 +15,8 @@
   justify-content: space-between;
   height: 370px;
   width: 100%;
-  background-color: var(--color-white);
-  border: 1px solid var(--color-box-border-grey);
+  background-color: map.get($colors, color-white);
+  border: 1px solid map.get($colors, color-box-border-grey);
   border-radius: 5px;
   margin-bottom: 37px;
 }
@@ -31,19 +31,19 @@
 }
 
 .benefit__headline {
-  font-family: var(--font-raleway);
+  font-family: $font-raleway;
   font-weight: 400;
   font-size: 2.25rem;
   line-height: 2.625rem;
-  color: var(--color-black);
+  color: map.get($colors, color-black);
   margin-bottom: 30px;
 }
 .benefit__text {
-  font-family: var(--font-open-sans);
+  font-family: $font-open-sans;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.375rem;
-  color: var(--color-black);
+  color: map.get($colors, color-black);
   text-align: left;
 }
 /**** lines after text  ****/
@@ -52,7 +52,7 @@
   display: block;
   width: 327px;
   height: 4px;
-  background-color: var(--color-redish);
+  background-color: map.get($colors, color-redish);
   margin-top: 50px;
 }
 .iphone__article {
@@ -63,7 +63,7 @@
   display: block;
   width: 327px;
   height: 4px;
-  background-color: var(--color-primary);
+  background-color: map.get($colors, color-primary);
   margin-top: 50px;
 }
 .trumpet__article {
@@ -74,7 +74,7 @@
   display: block;
   width: 327px;
   height: 4px;
-  background-color: var(--color-green);
+  background-color: map.get($colors, color-green);
   margin-top: 44px;
 }
 /**** benefits shape figures  ****/
@@ -87,7 +87,7 @@
   content:"";
   width: 180px;
   height: 180px;
-  background-color: var(--color-redish);
+  background-color: map.get($colors, color-redish);
   border-radius: 41px;
   transform: rotate(45deg);
   position: absolute;
@@ -104,7 +104,7 @@
   content:"";
   width: 320px;
   height: 320px;
-  background-color: var(--color-primary);
+  background-color: map.get($colors, color-primary);
   border-radius: 50%;
   position: absolute;
   left:0;
@@ -136,15 +136,15 @@
 .benefit__box--content {
   width: 624px;
   height: 370px;
-  background-color: var(--color-white);
-  border: 1px solid var(--color-box-border-grey);
+  background-color: map.get($colors, color-white);
+  border: 1px solid map.get($colors ,color-box-border-grey);
   border-radius: 5px;
 }
 .benefit__square--green {
   width: 440px;
   height: 370px;
-  background-color: var(--color-green);
-  border: 1px solid var(--color-box-border-grey);
+  background-color: map.get($colors, color-green);
+  border: 1px solid map.get($colors, color-box-border-grey);
   border-radius: 5px;
   display: flex;
   justify-content: center;

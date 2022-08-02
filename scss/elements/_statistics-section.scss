@@ -8,11 +8,11 @@
 }
 /**** statistic headline  ****/
 .statistic__headline {
-  font-family: var(--font-raleway);
+  font-family: $font-raleway;
   font-weight: 400;
   font-size: 2.25rem;
   line-height: 2.625rem;
-  color: var(--color-black);
+  color: map.get($colors, color-black);
   text-align: center;
   margin-bottom: 101px;
 }
@@ -39,13 +39,13 @@
   position: relative;
 }
 .red__circle {
-  background-color: var(--color-redish);
+  background-color: map.get($colors, color-redish);
 }
 .blue__circle {
-  background-color: var(--color-primary);
+  background-color: map.get($colors, color-primary);
 }
 .green__circle {
-  background-color: var(--color-green);
+  background-color: map.get($colors, color-green);
 }
 .person__icon,
 .eye__icon,
@@ -65,7 +65,7 @@
   left: 50%;
 }
 .column__number {
-  font-family: var(--font-raleway);
+  font-family: $font-raleway;
   font-weight: 800;
   font-size: 1.25rem;
   line-height: 1.5rem;
@@ -73,11 +73,11 @@
   margin-bottom: 19.06px;
 }
 .column__text {
-  font-family: var(--font-raleway);
+  font-family: $font-raleway;
   font-weight:400;
   font-size: 1.0625rem;
   line-height: 1.25rem ;
-  color: var(--color-grey);
+  color: map.get($colors, color-grey);
   text-align: center;
 }
 .center__column-text {
