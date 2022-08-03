@@ -4,21 +4,22 @@ header {
   height: 70px;
   background-color: map.get($colors, color-white);
   box-shadow: map.get($colors, color-grey-shadow) 0 -3px 6px;
+  .header__section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
 }
-.header__section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-}
+
 /****  logo   ****/
 .logo {
   font-family: $font-raleway;
   font-weight: 300;
   color: map.get($colors, color-primary);
-}
-.logo:focus {
-  outline: none;
+  &:focus {
+    outline: none;
+  }
 }
 .header__logo {
   font-size: 2rem;
@@ -32,6 +33,19 @@ header {
 .nav__list {
   display: flex;
   gap: 95px;
+  .nav__link {
+    color: map.get($colors, color-grey);
+    letter-spacing: 0.205rem;
+    padding: 25px 11px 25px;
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      color: map.get($colors, color-black);
+      border-bottom: 4px solid map.get($colors, color-primary);
+      cursor: pointer;
+    }
+  }
   // mobile navigation
   @include mobile {
     gap: 2px;
@@ -51,19 +65,6 @@ header {
       padding: 14px 20px;
     }
   }
-}
-.nav__link {
-  color: map.get($colors, color-grey);
-  letter-spacing: 0.205rem;
-  padding: 25px 11px 25px;
-}
-.nav__link:focus {
-  outline: none;
-}
-.nav__link:hover {
-  color: map.get($colors, color-black);
-  border-bottom: 4px solid map.get($colors, color-primary);
-  cursor: pointer;
 }
 /**** MOBILE navigation  ****/
 .menu {
