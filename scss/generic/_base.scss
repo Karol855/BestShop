@@ -1,4 +1,4 @@
-@import "scss/settings/fonts";
+@import "scss/settings";
 /****   >>>>>       added simple reset and helpers          <<<<<     ****/
 * {
   box-sizing: border-box;
@@ -14,4 +14,8 @@ body {
 .container {
   width: 1352px;
   margin: 0 auto;
+  @include desktop {
+    width: 100%;
+    padding: 0 15px;
+  }
 }
