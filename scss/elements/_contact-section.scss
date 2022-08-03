@@ -11,19 +11,19 @@
   flex-direction: column;
 }
 .contact__headline {
-  font-family: var(--font-raleway);
+  font-family: $font-raleway;
   font-weight: 400;
   font-size: 3.0625rem;
   line-height: 3.5625rem;
-  color: var(--color-black);
+  color: map.get($colors, color-black);
   margin-bottom: 22px;
 }
 .contact__text {
-  font-family: var(--font-open-sans);
+  font-family: $font-open-sans;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.375rem;
-  color: var(--color-black);
+  color: map.get($colors, color-black);
   margin-bottom: 40px;
 }
 .contact__details {
@@ -31,11 +31,11 @@
 }
 .contact__email,
 .contact__phone {
-  font-family: var(--font-open-sans);
+  font-family: $font-open-sans;
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.375rem;
-  color: var(--color-grey);
+  color: map.get($colors, color-grey);
 }
 .contact__email {
   margin-right: 20px;
@@ -56,18 +56,18 @@
   margin-bottom: 30px;
 }
 .form__label {
-  font-family: var(--font-open-sans);
+  font-family: $font-open-sans;
   font-weight: 700;
   font-size: 0.6875rem;
   line-height: 0.9375rem;
   letter-spacing: 0.205rem;
-  color: var(--color-primary);
+  color: map.get($colors, color-primary);
   text-align: left;
 }
 .form__input {
   height: 43px;
   border: none;
-  border-bottom: 1px solid var(--color-checkbox-text);
+  border-bottom: 1px solid map.get($colors, color-checkbox-text);
 }
 /**** contact checkbox  ****/
 .form__permission {
@@ -88,7 +88,7 @@
   height: 24px;
   flex-shrink: 0;
   flex-basis: 24px;
-  border: 1px solid var(--color-checkbox);
+  border: 1px solid map.get($colors, color-checkbox);
   border-radius: 4px;
   margin-right: 10px;
 }
@@ -98,26 +98,26 @@
   background-position: center;
 }
 .checkbox__text {
-  font-family: var(--font-open-sans);
+  font-family: $font-open-sans;
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 1.0625rem;
   text-align: left;
-  color: var(--color-checkbox-text);
+  color: map.get($colors, color-checkbox-text);
 }
 /**** contact button  ****/
 .contact__button {
   display: inline-block;
   padding: 20px 97px;
   cursor: pointer;
-  border-radius: var(--button-radius);
-  box-shadow: var(--color-primary-shadow) 5px 10px 14px;
-  font-family: var(--font-open-sans);
+  border-radius: $button-radius;
+  box-shadow: map.get($colors, color-primary-shadow) 5px 10px 14px;
+  font-family: $font-open-sans;
   font-weight: 700;
   font-size: 0.8125rem;
   line-height: 1.125rem;
-  color: var(--color-white);
-  background-color: var(--color-primary);
+  color: map.get($colors, color-white);
+  background-color: map.get($colors, color-primary);
   outline: none;
   border: none;
   align-self: flex-end;

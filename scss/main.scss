@@ -1,10 +1,9 @@
-// GENERIC
-@import "generic/reset";
-@import "generic/helpers";
 // SETTINGS
 @import "settings/index";
+// GENERIC
+@import "generic/reset";
+@import "generic/base";
 // ELEMENTS
-@import "elements/container";
 @import "elements/header-section";
 @import "elements/opening-section";
 @import "elements/benefits-section";

@@ -1,8 +1,8 @@
 @use "sass:map";
 
 footer {
-  background-color: var(--color-light-grey);
-  box-shadow: var(--color-grey-shadow) 0 -5px 40px;
+  background-color: map.get($colors, color-light-grey);
+  box-shadow: map.get($colors, color-grey-shadow) 0 -5px 40px;
   height: 89px;
 }
 .footer__container {
@@ -22,11 +22,11 @@ footer {
   margin-bottom: 6.52px;
 }
 .footer__copy {
-  font-family: var(--font-open-sans);
+  font-family: $font-open-sans;
   font-weight: 400;
   font-size: 0.6875rem;
   line-height: 0.9375rem;
-  color: var(--color-grey);
+  color: map.get($colors, color-grey);
   text-align: left;
 }
 .footer__icons {

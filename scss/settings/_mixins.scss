@@ -1,0 +1,21 @@
+//resolution
+$desktop:1352px;
+$mobile: 792px;
+
+// MIXINS
+@mixin desktop {
+  @media (max-width:#{$desktop}) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width:#{$mobile}) {
+    @content;
+  }
+}
+
+//@mixin small-tablet {
+//  @media (min-width:#{$small-tablet-min}) and (max-width:#{$small-tablet-max}) {
+//    @content;
+//  }
+//}
