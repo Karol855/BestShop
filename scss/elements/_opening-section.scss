@@ -1,48 +1,77 @@
 @use "sass:map";
 
-.opening__section {
+.opening {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 22px;
+  overflow: hidden;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .opening {
+      /**** headline  ****/
+      &__headline {
+        font-family: $font-raleway;
+        font-weight: 400;
+        font-size: 3.0625rem;
+        line-height: 3.5625rem;
+        color: map.get($colors, color-black);
+        margin-bottom: 20px;
+        margin-top: 130px;
+        @include mobile {
+          margin-top: 100px;
+        }
+      }
+
+      &__text {
+        font-family: $font-open-sans;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.375rem;
+        margin-bottom: 38px;
+        @include mobile {
+          padding: 0 70px;
+          margin-bottom: 28px;
+        }
+      }
+
+      /**** opening button  ****/
+      &__link {
+        font-size: 1rem;
+        background-color: map.get($colors, color-primary);
+        padding: 22px 157px;
+        border-radius: 40px;
+        box-shadow: map.get($colors, color-primary-shadow) 5px 10px 14px;
+        display: inline-block;
+        @include mobile {
+          padding: 22px 92px;
+          display: block;
+          margin-bottom: 51px;
+        }
+      }
+    }
+
+    /**** opening button  ****/
+    .btn {
+      font-family: $font-open-sans;
+      font-weight: 700;
+      color: map.get($colors, color-white);
+    }
+  }
+
+  /**** background image  ****/
+  &__background {
+    width: 100%;
+    height: auto;
+    padding-bottom: 78px;
+    @include mobile {
+      width: 220%;
+    }
+  }
 }
-.opening__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-/**** headline  ****/
-.opening__headline {
-  font-family: $font-raleway;
-  font-weight: 400;
-  font-size: 3.0625rem;
-  line-height: 3.5625rem;
-  color: map.get($colors, color-black);
-  margin-bottom: 20px;
-  margin-top: 130px;
-}
-.opening__text {
-  font-family: $font-open-sans;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.375rem;
-  margin-bottom: 38px;
-}
-/**** opening button  ****/
-.btn {
-  font-family: $font-open-sans;
-  font-weight: 700;
-  color: map.get($colors, color-white);
-}
-.opening_link {
-  background-color: map.get($colors, color-primary);
-  padding: 22px 157px;
-  border-radius: 40px;
-  box-shadow: map.get($colors, color-primary-shadow) 5px 10px 14px;
-}
-/**** background image  ****/
-.opening__background {
-  width: 100%;
-  height: auto;
-  padding-bottom: 78px;
-}
+
+
