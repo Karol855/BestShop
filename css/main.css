@@ -561,7 +561,6 @@ header .header__section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 22px;
   overflow: hidden;
   /**** background image  ****/
 }
@@ -808,8 +807,15 @@ header .header__section {
   flex-direction: column;
   align-items: center;
   margin-bottom: 121px;
+  margin-top: 22px;
   /**** statistic headline  ****/
   /**** statistic columns  ****/
+}
+@media (max-width: 792px) {
+  .statistic {
+    margin-top: 13px;
+    margin-bottom: 50px;
+  }
 }
 .statistic__headline {
   font-family: "Raleway", sans-serif;
@@ -820,12 +826,23 @@ header .header__section {
   text-align: center;
   margin-bottom: 101px;
 }
+@media (max-width: 792px) {
+  .statistic__headline {
+    margin-bottom: 25px;
+  }
+}
 .statistic__columns {
   max-width: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 185px;
+}
+@media (max-width: 792px) {
+  .statistic__columns {
+    flex-direction: column;
+    gap: 25px;
+  }
 }
 .statistic__columns .column {
   display: flex;
