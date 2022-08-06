@@ -1,5 +1,6 @@
 //resolution
 $desktop:1352px;
+$tablet: 1024px;
 $mobile: 792px;
 
 // MIXINS
@@ -14,8 +15,8 @@ $mobile: 792px;
   }
 }
 
-//@mixin small-tablet {
-//  @media (min-width:#{$small-tablet-min}) and (max-width:#{$small-tablet-max}) {
-//    @content;
-//  }
-//}
+@mixin tablet {
+  @media (max-width:#{$tablet}) {
+    @content;
+  }
+}
