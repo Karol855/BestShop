@@ -2,151 +2,172 @@
 
 .benefits {
   background-color: map.get($colors, color-light-grey);
-}
-.benefits__container {
-  width: 1124px;
-  padding-top: 105px;
-  padding-bottom: 105px;
-}
-/**** benefits boxes  ****/
-.benefit__box {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 370px;
-  width: 100%;
-  background-color: map.get($colors, color-white);
-  border: 1px solid map.get($colors, color-box-border-grey);
-  border-radius: 5px;
-  margin-bottom: 37px;
-}
-.benefit__box:nth-child(2) {
-  flex-direction: row-reverse;
-}
-.benefit__article {
-  max-width: 416px;
-  display: flex;
-  flex-direction: column;
-  margin-left: 35px;
-}
 
-.benefit__headline {
-  font-family: $font-raleway;
-  font-weight: 400;
-  font-size: 2.25rem;
-  line-height: 2.625rem;
-  color: map.get($colors, color-black);
-  margin-bottom: 30px;
-}
-.benefit__text {
-  font-family: $font-open-sans;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.375rem;
-  color: map.get($colors, color-black);
-  text-align: left;
-}
-/**** lines after text  ****/
-.macbook__article::after {
-  content: "";
-  display: block;
-  width: 327px;
-  height: 4px;
-  background-color: map.get($colors, color-redish);
-  margin-top: 50px;
-}
-.iphone__article {
-  margin-right: 20px;
-}
-.iphone__article::after {
-  content: "";
-  display: block;
-  width: 327px;
-  height: 4px;
-  background-color: map.get($colors, color-primary);
-  margin-top: 50px;
-}
-.trumpet__article {
-  margin-top: 70px;
-}
-.trumpet__article::after {
-  content: "";
-  display: block;
-  width: 327px;
-  height: 4px;
-  background-color: map.get($colors, color-green);
-  margin-top: 44px;
-}
-/**** benefits shape figures  ****/
-.benefit__square--red {
-  height: 255px;
-  width: 255px;
-  position: relative;
-}
-.benefit__square--red::before {
-  content:"";
-  width: 180px;
-  height: 180px;
-  background-color: map.get($colors, color-redish);
-  border-radius: 41px;
-  transform: rotate(45deg);
-  position: absolute;
-  left:-40px;
-  top:40px;
-}
-.benefit__circle--blue {
-  margin-left: 70px;
-  height: 328px;
-  width: 426px;
-  position: relative;
-}
-.benefit__circle--blue::before{
-  content:"";
-  width: 320px;
-  height: 320px;
-  background-color: map.get($colors, color-primary);
-  border-radius: 50%;
-  position: absolute;
-  left:0;
-  top:0;
-}
-/**** benefits boxes images  ****/
-.macbook__image {
-  height: 219px;
-  width: 386px;
-  position: absolute;
-  top:70px;
-  left: -280px;
+  &__container {
+    width: 1124px;
+    padding-top: 105px;
+    padding-bottom: 105px;
 
-}
-.iphone__image {
-  height: 328px;
-  width: 426px;
-  position: absolute;
-}
-.trumpet__image {
-  height: 208px;
-  width: 296px;
-}
-/**** benefits separated box (last box) ****/
-.benefit__box--separated {
-  display: flex;
-  justify-content: space-between;
-}
-.benefit__box--content {
-  width: 624px;
-  height: 370px;
-  background-color: map.get($colors, color-white);
-  border: 1px solid map.get($colors ,color-box-border-grey);
-  border-radius: 5px;
-}
-.benefit__square--green {
-  width: 440px;
-  height: 370px;
-  background-color: map.get($colors, color-green);
-  border: 1px solid map.get($colors, color-box-border-grey);
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    .benefit__box, .benefit__box--separated {
+      /**** benefits articles  ****/
+      .benefit__article {
+        max-width: 416px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 35px;
+
+        .benefit__headline {
+          font-family: $font-raleway;
+          font-weight: 400;
+          font-size: 2.25rem;
+          line-height: 2.625rem;
+          color: map.get($colors, color-black);
+          margin-bottom: 30px;
+        }
+        .benefit__text {
+          font-family: $font-open-sans;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 1.375rem;
+          color: map.get($colors, color-black);
+          text-align: left;
+        }
+      }
+    }
+
+    /**** benefits boxes  ****/
+    .benefit__box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 370px;
+      width: 100%;
+      background-color: map.get($colors, color-white);
+      border: 1px solid map.get($colors, color-box-border-grey);
+      border-radius: 5px;
+      margin-bottom: 37px;
+
+      &:nth-child(2) {
+        flex-direction: row-reverse;
+      }
+
+      /**** lines after text  ****/
+      .macbook__article::after {
+        content: "";
+        display: block;
+        width: 327px;
+        height: 4px;
+        background-color: map.get($colors, color-redish);
+        margin-top: 50px;
+      }
+
+      .iphone__article {
+        margin-right: 20px;
+
+        &::after {
+          content: "";
+          display: block;
+          width: 327px;
+          height: 4px;
+          background-color: map.get($colors, color-primary);
+          margin-top: 50px;
+        }
+      }
+
+      /**** benefits shape figures  ****/
+      .benefit__square--red {
+        height: 255px;
+        width: 255px;
+        position: relative;
+
+        &::before {
+          content:"";
+          width: 180px;
+          height: 180px;
+          background-color: map.get($colors, color-redish);
+          border-radius: 41px;
+          transform: rotate(45deg);
+          position: absolute;
+          left:-40px;
+          top:40px;
+        }
+
+        /**** benefits boxes images  ****/
+        .macbook__image {
+          height: 219px;
+          width: 386px;
+          position: absolute;
+          top:70px;
+          left: -280px;
+        }
+      }
+
+      .benefit__circle--blue {
+        margin-left: 70px;
+        height: 328px;
+        width: 426px;
+        position: relative;
+
+        &::before {
+          content:"";
+          width: 320px;
+          height: 320px;
+          background-color: map.get($colors, color-primary);
+          border-radius: 50%;
+          position: absolute;
+          left:0;
+          top:0;
+        }
+
+        .iphone__image {
+          height: 328px;
+          width: 426px;
+          position: absolute;
+        }
+      }
+    }
+
+    /**** benefits separated box (last box) ****/
+    .benefit__box--separated {
+      display: flex;
+      justify-content: space-between;
+
+      .benefit__box--content {
+        width: 624px;
+        height: 370px;
+        background-color: map.get($colors, color-white);
+        border: 1px solid map.get($colors ,color-box-border-grey);
+        border-radius: 5px;
+
+        .trumpet__article {
+          margin-top: 70px;
+
+          &::after {
+            content: "";
+            display: block;
+            width: 327px;
+            height: 4px;
+            background-color: map.get($colors, color-green);
+            margin-top: 44px;
+          }
+        }
+      }
+
+      .benefit__square--green {
+        width: 440px;
+        height: 370px;
+        background-color: map.get($colors, color-green);
+        border: 1px solid map.get($colors, color-box-border-grey);
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .trumpet__image {
+          height: 208px;
+          width: 296px;
+        }
+      }
+    }
+  }
 }
