@@ -5,10 +5,21 @@
   margin: 155px auto 59px;
   display: flex;
 
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 15px;
+    margin: 0;
+  }
+
   /**** contact info  ****/
   .contact__information {
     display: flex;
     flex-direction: column;
+
+    @include  tablet {
+      width: 100%;
+    }
 
     .contact__headline {
       font-family: $font-raleway;
@@ -25,9 +36,18 @@
       line-height: 1.375rem;
       color: map.get($colors, color-black);
       margin-bottom: 40px;
+
+      @include  tablet {
+        margin-top: 5px;
+        margin-bottom: 35px;
+      }
     }
     .contact__details {
       display: flex;
+
+      @include  tablet {
+        flex-direction: column;
+      }
 
       .contact__email,
       .contact__phone {
@@ -36,6 +56,10 @@
         font-size: 1rem;
         line-height: 1.375rem;
         color: map.get($colors, color-grey);
+
+        @include  tablet {
+          margin-bottom: 10px;
+        }
       }
       .contact__email {
         margin-right: 20px;
@@ -49,6 +73,13 @@
     display: flex;
     flex-direction: column;
     margin-left: 113px;
+
+    @include  tablet {
+      width: 100%;
+      max-width: 100%;
+      margin-left: 0;
+      margin-top: 10px;
+    }
 
     .form__field {
       display: flex;

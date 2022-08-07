@@ -1020,6 +1020,12 @@ header .header__section {
     margin: 100px auto;
   }
 }
+@media (max-width: 1024px) {
+  .pricing__container {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
 .pricing__container .pricing__headline {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -1251,9 +1257,22 @@ header .header__section {
   /**** contact info  ****/
   /**** contact form  ****/
 }
+@media (max-width: 1024px) {
+  .contact__container {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 15px;
+    margin: 0;
+  }
+}
 .contact__container .contact__information {
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 1024px) {
+  .contact__container .contact__information {
+    width: 100%;
+  }
 }
 .contact__container .contact__information .contact__headline {
   font-family: "Raleway", sans-serif;
@@ -1271,8 +1290,19 @@ header .header__section {
   color: #000000;
   margin-bottom: 40px;
 }
+@media (max-width: 1024px) {
+  .contact__container .contact__information .contact__text {
+    margin-top: 5px;
+    margin-bottom: 35px;
+  }
+}
 .contact__container .contact__information .contact__details {
   display: flex;
+}
+@media (max-width: 1024px) {
+  .contact__container .contact__information .contact__details {
+    flex-direction: column;
+  }
 }
 .contact__container .contact__information .contact__details .contact__email,
 .contact__container .contact__information .contact__details .contact__phone {
@@ -1281,6 +1311,12 @@ header .header__section {
   font-size: 1rem;
   line-height: 1.375rem;
   color: #A5A5A5;
+}
+@media (max-width: 1024px) {
+  .contact__container .contact__information .contact__details .contact__email,
+.contact__container .contact__information .contact__details .contact__phone {
+    margin-bottom: 10px;
+  }
 }
 .contact__container .contact__information .contact__details .contact__email {
   margin-right: 20px;
@@ -1292,6 +1328,14 @@ header .header__section {
   margin-left: 113px;
   /**** contact checkbox  ****/
   /**** contact button  ****/
+}
+@media (max-width: 1024px) {
+  .contact__container .form {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
 }
 .contact__container .form .form__field {
   display: flex;
