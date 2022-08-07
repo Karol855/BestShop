@@ -2,12 +2,17 @@
 
 .pricing {
   background-color: map.get($colors, color-white);
+
   &__container {
     width: 1266px;
-    margin: 100px auto 0;
+    margin: 100px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include desktop {
+      margin: 100px auto;
+    }
 
     /**** pricing headline  ****/
     .pricing__headline {
@@ -27,6 +32,10 @@
       align-items: center;
       width: 100%;
 
+      @include desktop {
+        flex-direction: column;
+      }
+
       .pricing__box {
         width: 372px;
         height: 461px;
@@ -34,6 +43,17 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @include desktop {
+          height: 222px;
+          width: 100%;
+          max-width: 370px;
+          flex-direction: row;
+          flex-wrap: wrap;
+          margin-bottom: 50px;
+          justify-content: center;
+          padding: 25px 10px 0 10px;
+        }
 
         &:first-child {
           border: 1px solid map.get($colors, color-redish);
@@ -43,6 +63,12 @@
           width: 405px;
           height: 500px;
           box-shadow: map.get($colors, color-primary-shadow) 5px 10px 27px;
+
+          @include desktop {
+            height: 242px;
+            width: 100%;
+            max-width: 400px;
+          }
         }
         &:last-child {
           border: 1px solid map.get($colors, color-green);
@@ -52,29 +78,54 @@
           color: map.get($colors, color-redish);
           margin-bottom: 69px;
           padding: 18px 0;
+
+          @include desktop {
+            margin: 0;
+          }
         }
         &:nth-child(2) > .pricing__package > .pricing__price {
           color: map.get($colors, color-primary);
           margin-bottom: 5px;
           padding: 24px 0;
+
+          @include desktop {
+            margin: 0;
+          }
         }
         &:last-child > .pricing__package > .pricing__price {
           color: map.get($colors, color-green);
           margin-bottom: 5px;
           padding: 18px 0;
+
+          @include desktop {
+            margin: 0;
+          }
         }
 
         &:nth-child(2) > .pricing__package > .pricing__limit {
           margin-bottom: 61px;
+
+          @include desktop {
+            margin: 0;
+          }
         }
         &:last-child > .pricing__package > .pricing__limit {
           margin-bottom: 50px;
+
+          @include desktop {
+            margin: 0;
+          }
         }
         &:nth-child(2) > .pricing__package > .pricing__type {
           font-size: 1.3125rem;
         }
         &:nth-child(2) >.pricing__details-list {
           margin-bottom: 27px;
+
+          @include desktop {
+            width: 170px;
+            margin: 0;
+          }
         }
 
         /**** checkmark  ****/
@@ -107,6 +158,12 @@
           flex-direction: column;
           align-items: center;
 
+          @include desktop {
+            max-width: 100%;
+            width: 50%;
+            margin: 0;
+          }
+
           .pricing__type {
             font-family: $font-raleway;
             font-weight: 700;
@@ -135,12 +192,22 @@
           align-items: center;
           margin-bottom: 15px;
 
+          @include desktop {
+            min-width: 150px;
+            margin-bottom: 5px;
+          }
+
           .pricing__items {
             font-family: $font-open-sans;
             font-weight: 400;
             font-size: 0.875rem;
             line-height: 2.5625rem;
             color: map.get($colors, color-black);
+
+            @include desktop {
+              line-height: 2.125rem;
+              align-self: flex-start;
+            }
           }
         }
 
@@ -161,6 +228,10 @@
           background-color: map.get($colors, color-primary);
           padding: 16px 64px;
           box-shadow: map.get($colors, color-primary-shadow) 5px 10px 14px;
+
+          @include desktop {
+            margin-top: 22px;
+          }
         }
         .green__button {
           background-color: map.get($colors, color-green);

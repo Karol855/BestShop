@@ -1008,12 +1008,17 @@ header .header__section {
 }
 .pricing__container {
   width: 1266px;
-  margin: 100px auto 0;
+  margin: 100px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   /**** pricing headline  ****/
   /**** pricing columns  ****/
+}
+@media (max-width: 1352px) {
+  .pricing__container {
+    margin: 100px auto;
+  }
 }
 .pricing__container .pricing__headline {
   font-family: "Raleway", sans-serif;
@@ -1030,6 +1035,11 @@ header .header__section {
   align-items: center;
   width: 100%;
 }
+@media (max-width: 1352px) {
+  .pricing__container .pricing__columns {
+    flex-direction: column;
+  }
+}
 .pricing__container .pricing__columns .pricing__box {
   width: 372px;
   height: 461px;
@@ -1043,6 +1053,18 @@ header .header__section {
   /**** pricing detail list  ****/
   /**** buttons  ****/
 }
+@media (max-width: 1352px) {
+  .pricing__container .pricing__columns .pricing__box {
+    height: 222px;
+    width: 100%;
+    max-width: 370px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    justify-content: center;
+    padding: 25px 10px 0 10px;
+  }
+}
 .pricing__container .pricing__columns .pricing__box:first-child {
   border: 1px solid #FB3B64;
 }
@@ -1052,6 +1074,13 @@ header .header__section {
   height: 500px;
   box-shadow: rgba(7, 172, 230, 0.16) 5px 10px 27px;
 }
+@media (max-width: 1352px) {
+  .pricing__container .pricing__columns .pricing__box:nth-child(2) {
+    height: 242px;
+    width: 100%;
+    max-width: 400px;
+  }
+}
 .pricing__container .pricing__columns .pricing__box:last-child {
   border: 1px solid #55DFB4;
 }
@@ -1060,27 +1089,58 @@ header .header__section {
   margin-bottom: 69px;
   padding: 18px 0;
 }
+@media (max-width: 1352px) {
+  .pricing__container .pricing__columns .pricing__box:first-child > .pricing__package > .pricing__price {
+    margin: 0;
+  }
+}
 .pricing__container .pricing__columns .pricing__box:nth-child(2) > .pricing__package > .pricing__price {
   color: #08A6E4;
   margin-bottom: 5px;
   padding: 24px 0;
+}
+@media (max-width: 1352px) {
+  .pricing__container .pricing__columns .pricing__box:nth-child(2) > .pricing__package > .pricing__price {
+    margin: 0;
+  }
 }
 .pricing__container .pricing__columns .pricing__box:last-child > .pricing__package > .pricing__price {
   color: #55DFB4;
   margin-bottom: 5px;
   padding: 18px 0;
 }
+@media (max-width: 1352px) {
+  .pricing__container .pricing__columns .pricing__box:last-child > .pricing__package > .pricing__price {
+    margin: 0;
+  }
+}
 .pricing__container .pricing__columns .pricing__box:nth-child(2) > .pricing__package > .pricing__limit {
   margin-bottom: 61px;
 }
+@media (max-width: 1352px) {
+  .pricing__container .pricing__columns .pricing__box:nth-child(2) > .pricing__package > .pricing__limit {
+    margin: 0;
+  }
+}
 .pricing__container .pricing__columns .pricing__box:last-child > .pricing__package > .pricing__limit {
   margin-bottom: 50px;
+}
+@media (max-width: 1352px) {
+  .pricing__container .pricing__columns .pricing__box:last-child > .pricing__package > .pricing__limit {
+    margin: 0;
+  }
 }
 .pricing__container .pricing__columns .pricing__box:nth-child(2) > .pricing__package > .pricing__type {
   font-size: 1.3125rem;
 }
 .pricing__container .pricing__columns .pricing__box:nth-child(2) > .pricing__details-list {
   margin-bottom: 27px;
+}
+@media (max-width: 1352px) {
+  .pricing__container .pricing__columns .pricing__box:nth-child(2) > .pricing__details-list {
+    width: 170px;
+    margin: 0;
+  }
 }
 .pricing__container .pricing__columns .pricing__box:first-child > .pricing__details-list > .pricing__items:nth-last-child(n+3)::before {
   content: url("../assets/Checkmark-1.svg");
@@ -1108,6 +1168,13 @@ header .header__section {
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 1352px) {
+  .pricing__container .pricing__columns .pricing__box .pricing__package {
+    max-width: 100%;
+    width: 50%;
+    margin: 0;
+  }
+}
 .pricing__container .pricing__columns .pricing__box .pricing__package .pricing__type {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -1133,12 +1200,24 @@ header .header__section {
   align-items: center;
   margin-bottom: 15px;
 }
+@media (max-width: 1352px) {
+  .pricing__container .pricing__columns .pricing__box .pricing__details-list {
+    min-width: 150px;
+    margin-bottom: 5px;
+  }
+}
 .pricing__container .pricing__columns .pricing__box .pricing__details-list .pricing__items {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 2.5625rem;
   color: #000000;
+}
+@media (max-width: 1352px) {
+  .pricing__container .pricing__columns .pricing__box .pricing__details-list .pricing__items {
+    line-height: 2.125rem;
+    align-self: flex-start;
+  }
 }
 .pricing__container .pricing__columns .pricing__box .pricing_buttons {
   font-family: "Open Sans", sans-serif;
@@ -1155,6 +1234,11 @@ header .header__section {
   background-color: #08A6E4;
   padding: 16px 64px;
   box-shadow: rgba(7, 172, 230, 0.16) 5px 10px 14px;
+}
+@media (max-width: 1352px) {
+  .pricing__container .pricing__columns .pricing__box .blue__button {
+    margin-top: 22px;
+  }
 }
 .pricing__container .pricing__columns .pricing__box .green__button {
   background-color: #55DFB4;
