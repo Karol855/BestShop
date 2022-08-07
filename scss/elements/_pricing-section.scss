@@ -2,157 +2,170 @@
 
 .pricing {
   background-color: map.get($colors, color-white);
-}
-.pricing__container {
-  width: 1266px;
-  margin: 100px auto 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-/**** pricing headline  ****/
-.pricing__headline {
-  font-family: $font-raleway;
-  font-weight: 400;
-  font-size: 2.25rem;
-  line-height: 2.625rem;
-  text-align: center;
-  color: map.get($colors, color-black);
-  margin-bottom: 50px;
-}
-/**** pricing columns  ****/
-.pricing__columns {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-.pricing__box {
-  width: 372px;
-  height: 461px;
-  border-radius: 18px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.pricing__box:first-child {
-  border: 1px solid map.get($colors, color-redish);
-}
-.pricing__box:nth-child(2) {
-  border: 1px solid map.get($colors, color-primary);
-  width: 405px;
-  height: 500px;
-  box-shadow: map.get($colors, color-primary-shadow) 5px 10px 27px;
-}
-.pricing__box:last-child {
-  border: 1px solid map.get($colors, color-green);
-}
-/**** pricing package  ****/
-.pricing__package {
-  margin-top: 34px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.pricing__type {
-  font-family: $font-raleway;
-  font-weight: 700;
-  font-size: 1.25rem;
-  margin-bottom: 14px;
-  /*line-height: 0.0625rem;*/
-}
-.pricing__box:nth-child(2) > .pricing__package > .pricing__type {
-  font-size: 1.3125rem;
-}
-.pricing__price {
-  font-family: $font-open-sans;
-  font-weight: 300;
-  font-size: 2.875rem;
-  /*line-height: 0.125rem;*/
-}
-.pricing__box:first-child > .pricing__package > .pricing__price {
-  color: map.get($colors, color-redish);
-  margin-bottom: 69px;
-  padding: 18px 0;
-}
-.pricing__box:nth-child(2) > .pricing__package > .pricing__price {
-  color: map.get($colors, color-primary);
-  margin-bottom: 5px;
-  padding: 24px 0;
-}
-.pricing__box:last-child > .pricing__package > .pricing__price {
-  color: map.get($colors, color-green);
-  margin-bottom: 5px;
-  padding: 18px 0;
-}
-.pricing__limit {
-  font-family: $font-raleway;
-  font-weight: 700;
-  font-size: 12px;
-  color: map.get($colors, color-black);
-}
-.pricing__box:nth-child(2) > .pricing__package > .pricing__limit {
-  margin-bottom: 61px;
-}
-.pricing__box:last-child > .pricing__package > .pricing__limit {
-  margin-bottom: 50px;
-}
-/**** pricing detail list  ****/
-.pricing__details-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 15px;
-}
-.pricing__box:nth-child(2) >.pricing__details-list {
-  margin-bottom: 27px;
-}
-.pricing__items {
-  font-family: $font-open-sans;
-  font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 2.5625rem;
-  color: map.get($colors, color-black);
-}
-/**** checkmark  ****/
-.pricing__box:first-child > .pricing__details-list > .pricing__items:nth-last-child(n+3)::before {
-  content: url("../assets/Checkmark-1.svg");
-  margin-right: 10px;
-}
-.pricing__box:nth-child(2) > .pricing__details-list > .pricing__items:nth-last-child(n+2)::before {
-  content: url("../assets/Checkmark-1.svg");
-  margin-right: 10px;
-}
-.pricing__box:last-child > .pricing__details-list > .pricing__items:nth-last-child(n+1)::before {
-  content: url("../assets/Checkmark-1.svg");
-  margin-right: 10px;
-}
-/**** close box  ****/
-.pricing__box:first-child > .pricing__details-list > .pricing__items:nth-child(n+4)::before {
-  content: url("../assets/Close.svg");
-  margin-right: 10px;
-}
-.pricing__box:nth-child(2) > .pricing__details-list > .pricing__items:nth-child(n+5)::before {
-  content: url("../assets/Close.svg");
-  margin-right: 10px;
-}
-/**** buttons  ****/
-.pricing_buttons {
-  font-family: $font-open-sans;
-  font-weight: 700;
-  font-size: 0.8125rem;
-  color: map.get($colors, color-white);
-  border-radius: 23px;
-  padding: 16px 57px;
-}
-.red__button {
-  background-color: map.get($colors, color-redish);
-}
-.blue__button {
-  background-color: map.get($colors, color-primary);
-  padding: 16px 64px;
-  box-shadow: map.get($colors, color-primary-shadow) 5px 10px 14px;
-}
-.green__button {
-  background-color: map.get($colors, color-green);
+  &__container {
+    width: 1266px;
+    margin: 100px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /**** pricing headline  ****/
+    .pricing__headline {
+      font-family: $font-raleway;
+      font-weight: 400;
+      font-size: 2.25rem;
+      line-height: 2.625rem;
+      text-align: center;
+      color: map.get($colors, color-black);
+      margin-bottom: 50px;
+    }
+
+    /**** pricing columns  ****/
+    .pricing__columns {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      .pricing__box {
+        width: 372px;
+        height: 461px;
+        border-radius: 18px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &:first-child {
+          border: 1px solid map.get($colors, color-redish);
+        }
+        &:nth-child(2) {
+          border: 1px solid map.get($colors, color-primary);
+          width: 405px;
+          height: 500px;
+          box-shadow: map.get($colors, color-primary-shadow) 5px 10px 27px;
+        }
+        &:last-child {
+          border: 1px solid map.get($colors, color-green);
+        }
+
+        &:first-child > .pricing__package > .pricing__price {
+          color: map.get($colors, color-redish);
+          margin-bottom: 69px;
+          padding: 18px 0;
+        }
+        &:nth-child(2) > .pricing__package > .pricing__price {
+          color: map.get($colors, color-primary);
+          margin-bottom: 5px;
+          padding: 24px 0;
+        }
+        &:last-child > .pricing__package > .pricing__price {
+          color: map.get($colors, color-green);
+          margin-bottom: 5px;
+          padding: 18px 0;
+        }
+
+        &:nth-child(2) > .pricing__package > .pricing__limit {
+          margin-bottom: 61px;
+        }
+        &:last-child > .pricing__package > .pricing__limit {
+          margin-bottom: 50px;
+        }
+        &:nth-child(2) > .pricing__package > .pricing__type {
+          font-size: 1.3125rem;
+        }
+        &:nth-child(2) >.pricing__details-list {
+          margin-bottom: 27px;
+        }
+
+        /**** checkmark  ****/
+        &:first-child > .pricing__details-list > .pricing__items:nth-last-child(n+3)::before {
+          content: url("../assets/Checkmark-1.svg");
+          margin-right: 10px;
+        }
+        &:nth-child(2) > .pricing__details-list > .pricing__items:nth-last-child(n+2)::before {
+          content: url("../assets/Checkmark-1.svg");
+          margin-right: 10px;
+        }
+        &:last-child > .pricing__details-list > .pricing__items:nth-last-child(n+1)::before {
+          content: url("../assets/Checkmark-1.svg");
+          margin-right: 10px;
+        }
+        /**** close box  ****/
+        &:first-child > .pricing__details-list > .pricing__items:nth-child(n+4)::before {
+          content: url("../assets/Close.svg");
+          margin-right: 10px;
+        }
+        &:nth-child(2) > .pricing__details-list > .pricing__items:nth-child(n+5)::before {
+          content: url("../assets/Close.svg");
+          margin-right: 10px;
+        }
+
+        /**** pricing package  ****/
+        .pricing__package {
+          margin-top: 34px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .pricing__type {
+            font-family: $font-raleway;
+            font-weight: 700;
+            font-size: 1.25rem;
+            margin-bottom: 14px;
+            /*line-height: 0.0625rem;*/
+          }
+          .pricing__price {
+            font-family: $font-open-sans;
+            font-weight: 300;
+            font-size: 2.875rem;
+            /*line-height: 0.125rem;*/
+          }
+          .pricing__limit {
+            font-family: $font-raleway;
+            font-weight: 700;
+            font-size: 12px;
+            color: map.get($colors, color-black);
+          }
+        }
+
+        /**** pricing detail list  ****/
+        .pricing__details-list {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 15px;
+
+          .pricing__items {
+            font-family: $font-open-sans;
+            font-weight: 400;
+            font-size: 0.875rem;
+            line-height: 2.5625rem;
+            color: map.get($colors, color-black);
+          }
+        }
+
+        /**** buttons  ****/
+        .pricing_buttons {
+          font-family: $font-open-sans;
+          font-weight: 700;
+          font-size: 0.8125rem;
+          color: map.get($colors, color-white);
+          border-radius: 23px;
+          padding: 16px 57px;
+        }
+
+        .red__button {
+          background-color: map.get($colors, color-redish);
+        }
+        .blue__button {
+          background-color: map.get($colors, color-primary);
+          padding: 16px 64px;
+          box-shadow: map.get($colors, color-primary-shadow) 5px 10px 14px;
+        }
+        .green__button {
+          background-color: map.get($colors, color-green);
+        }
+      }
+    }
+  }
 }
