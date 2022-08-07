@@ -816,7 +816,7 @@ header .header__section {
     width: 130px;
     height: 130px;
     left: 20px;
-    top: 15px;
+    top: 10px;
   }
 }
 .benefits__container .benefit__box .benefit__circle--blue .iphone__image {
@@ -1144,7 +1144,6 @@ header .header__section {
 }
 @media (max-width: 1352px) {
   .pricing__container .pricing__columns .pricing__box:nth-child(2) > .pricing__details-list {
-    width: 170px;
     margin: 0;
   }
 }
@@ -1334,7 +1333,7 @@ header .header__section {
     width: 100%;
     max-width: 100%;
     margin-left: 0;
-    margin-top: 10px;
+    margin-top: 20px;
   }
 }
 .contact__container .form .form__field {
@@ -1416,32 +1415,28 @@ header .header__section {
   align-self: flex-end;
 }
 
-footer {
+.footer {
   background-color: #F7F7F7;
   box-shadow: rgba(0, 0, 0, 0.1607843137) 0 -5px 40px;
   height: 89px;
 }
-
-.footer__container {
+.footer .footer__container {
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.footer__logo--container {
+.footer .footer__container .footer__logo--container {
   display: flex;
   flex-direction: column;
 }
-
-.footer__logo {
+.footer .footer__container .footer__logo--container .footer__logo {
   font-size: 1.625rem;
   line-height: 1.875rem;
   text-align: left;
   margin-bottom: 6.52px;
 }
-
-.footer__copy {
+.footer .footer__container .footer__logo--container .footer__copy {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 0.6875rem;
@@ -1449,12 +1444,10 @@ footer {
   color: #A5A5A5;
   text-align: left;
 }
-
-.footer__icons {
+.footer .footer__container .footer__icons {
   display: flex;
 }
-
-.twitter {
+.footer .footer__container .footer__icons .twitter {
   margin-right: 20px;
 }
 /*# sourceMappingURL=main.css.map */
