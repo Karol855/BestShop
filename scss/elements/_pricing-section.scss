@@ -13,6 +13,10 @@
     @include desktop {
       margin: 100px auto;
     }
+    @include tablet {
+      width: 100%;
+      padding: 0 15px;
+    }
 
     /**** pricing headline  ****/
     .pricing__headline {
