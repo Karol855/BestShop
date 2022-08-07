@@ -1006,17 +1006,16 @@ header .header__section {
 .pricing {
   background-color: #ffffff;
 }
-
 .pricing__container {
   width: 1266px;
   margin: 100px auto 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  /**** pricing headline  ****/
+  /**** pricing columns  ****/
 }
-
-/**** pricing headline  ****/
-.pricing__headline {
+.pricing__container .pricing__headline {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 2.25rem;
@@ -1025,148 +1024,123 @@ header .header__section {
   color: #000000;
   margin-bottom: 50px;
 }
-
-/**** pricing columns  ****/
-.pricing__columns {
+.pricing__container .pricing__columns {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
-
-.pricing__box {
+.pricing__container .pricing__columns .pricing__box {
   width: 372px;
   height: 461px;
   border-radius: 18px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  /**** checkmark  ****/
+  /**** close box  ****/
+  /**** pricing package  ****/
+  /**** pricing detail list  ****/
+  /**** buttons  ****/
 }
-
-.pricing__box:first-child {
+.pricing__container .pricing__columns .pricing__box:first-child {
   border: 1px solid #FB3B64;
 }
-
-.pricing__box:nth-child(2) {
+.pricing__container .pricing__columns .pricing__box:nth-child(2) {
   border: 1px solid #08A6E4;
   width: 405px;
   height: 500px;
   box-shadow: rgba(7, 172, 230, 0.16) 5px 10px 27px;
 }
-
-.pricing__box:last-child {
+.pricing__container .pricing__columns .pricing__box:last-child {
   border: 1px solid #55DFB4;
 }
-
-/**** pricing package  ****/
-.pricing__package {
+.pricing__container .pricing__columns .pricing__box:first-child > .pricing__package > .pricing__price {
+  color: #FB3B64;
+  margin-bottom: 69px;
+  padding: 18px 0;
+}
+.pricing__container .pricing__columns .pricing__box:nth-child(2) > .pricing__package > .pricing__price {
+  color: #08A6E4;
+  margin-bottom: 5px;
+  padding: 24px 0;
+}
+.pricing__container .pricing__columns .pricing__box:last-child > .pricing__package > .pricing__price {
+  color: #55DFB4;
+  margin-bottom: 5px;
+  padding: 18px 0;
+}
+.pricing__container .pricing__columns .pricing__box:nth-child(2) > .pricing__package > .pricing__limit {
+  margin-bottom: 61px;
+}
+.pricing__container .pricing__columns .pricing__box:last-child > .pricing__package > .pricing__limit {
+  margin-bottom: 50px;
+}
+.pricing__container .pricing__columns .pricing__box:nth-child(2) > .pricing__package > .pricing__type {
+  font-size: 1.3125rem;
+}
+.pricing__container .pricing__columns .pricing__box:nth-child(2) > .pricing__details-list {
+  margin-bottom: 27px;
+}
+.pricing__container .pricing__columns .pricing__box:first-child > .pricing__details-list > .pricing__items:nth-last-child(n+3)::before {
+  content: url("../assets/Checkmark-1.svg");
+  margin-right: 10px;
+}
+.pricing__container .pricing__columns .pricing__box:nth-child(2) > .pricing__details-list > .pricing__items:nth-last-child(n+2)::before {
+  content: url("../assets/Checkmark-1.svg");
+  margin-right: 10px;
+}
+.pricing__container .pricing__columns .pricing__box:last-child > .pricing__details-list > .pricing__items:nth-last-child(n+1)::before {
+  content: url("../assets/Checkmark-1.svg");
+  margin-right: 10px;
+}
+.pricing__container .pricing__columns .pricing__box:first-child > .pricing__details-list > .pricing__items:nth-child(n+4)::before {
+  content: url("../assets/Close.svg");
+  margin-right: 10px;
+}
+.pricing__container .pricing__columns .pricing__box:nth-child(2) > .pricing__details-list > .pricing__items:nth-child(n+5)::before {
+  content: url("../assets/Close.svg");
+  margin-right: 10px;
+}
+.pricing__container .pricing__columns .pricing__box .pricing__package {
   margin-top: 34px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.pricing__type {
+.pricing__container .pricing__columns .pricing__box .pricing__package .pricing__type {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 1.25rem;
   margin-bottom: 14px;
   /*line-height: 0.0625rem;*/
 }
-
-.pricing__box:nth-child(2) > .pricing__package > .pricing__type {
-  font-size: 1.3125rem;
-}
-
-.pricing__price {
+.pricing__container .pricing__columns .pricing__box .pricing__package .pricing__price {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 2.875rem;
   /*line-height: 0.125rem;*/
 }
-
-.pricing__box:first-child > .pricing__package > .pricing__price {
-  color: #FB3B64;
-  margin-bottom: 69px;
-  padding: 18px 0;
-}
-
-.pricing__box:nth-child(2) > .pricing__package > .pricing__price {
-  color: #08A6E4;
-  margin-bottom: 5px;
-  padding: 24px 0;
-}
-
-.pricing__box:last-child > .pricing__package > .pricing__price {
-  color: #55DFB4;
-  margin-bottom: 5px;
-  padding: 18px 0;
-}
-
-.pricing__limit {
+.pricing__container .pricing__columns .pricing__box .pricing__package .pricing__limit {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 12px;
   color: #000000;
 }
-
-.pricing__box:nth-child(2) > .pricing__package > .pricing__limit {
-  margin-bottom: 61px;
-}
-
-.pricing__box:last-child > .pricing__package > .pricing__limit {
-  margin-bottom: 50px;
-}
-
-/**** pricing detail list  ****/
-.pricing__details-list {
+.pricing__container .pricing__columns .pricing__box .pricing__details-list {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 15px;
 }
-
-.pricing__box:nth-child(2) > .pricing__details-list {
-  margin-bottom: 27px;
-}
-
-.pricing__items {
+.pricing__container .pricing__columns .pricing__box .pricing__details-list .pricing__items {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 2.5625rem;
   color: #000000;
 }
-
-/**** checkmark  ****/
-.pricing__box:first-child > .pricing__details-list > .pricing__items:nth-last-child(n+3)::before {
-  content: url("../assets/Checkmark-1.svg");
-  margin-right: 10px;
-}
-
-.pricing__box:nth-child(2) > .pricing__details-list > .pricing__items:nth-last-child(n+2)::before {
-  content: url("../assets/Checkmark-1.svg");
-  margin-right: 10px;
-}
-
-.pricing__box:last-child > .pricing__details-list > .pricing__items:nth-last-child(n+1)::before {
-  content: url("../assets/Checkmark-1.svg");
-  margin-right: 10px;
-}
-
-/**** close box  ****/
-.pricing__box:first-child > .pricing__details-list > .pricing__items:nth-child(n+4)::before {
-  content: url("../assets/Close.svg");
-  margin-right: 10px;
-}
-
-.pricing__box:nth-child(2) > .pricing__details-list > .pricing__items:nth-child(n+5)::before {
-  content: url("../assets/Close.svg");
-  margin-right: 10px;
-}
-
-/**** buttons  ****/
-.pricing_buttons {
+.pricing__container .pricing__columns .pricing__box .pricing_buttons {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 0.8125rem;
@@ -1174,18 +1148,15 @@ header .header__section {
   border-radius: 23px;
   padding: 16px 57px;
 }
-
-.red__button {
+.pricing__container .pricing__columns .pricing__box .red__button {
   background-color: #FB3B64;
 }
-
-.blue__button {
+.pricing__container .pricing__columns .pricing__box .blue__button {
   background-color: #08A6E4;
   padding: 16px 64px;
   box-shadow: rgba(7, 172, 230, 0.16) 5px 10px 14px;
 }
-
-.green__button {
+.pricing__container .pricing__columns .pricing__box .green__button {
   background-color: #55DFB4;
 }
 
