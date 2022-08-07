@@ -1248,15 +1248,14 @@ header .header__section {
   width: 896px;
   margin: 155px auto 59px;
   display: flex;
+  /**** contact info  ****/
+  /**** contact form  ****/
 }
-
-/**** contact info  ****/
-.contact__information {
+.contact__container .contact__information {
   display: flex;
   flex-direction: column;
 }
-
-.contact__headline {
+.contact__container .contact__information .contact__headline {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 3.0625rem;
@@ -1264,8 +1263,7 @@ header .header__section {
   color: #000000;
   margin-bottom: 22px;
 }
-
-.contact__text {
+.contact__container .contact__information .contact__text {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 1rem;
@@ -1273,43 +1271,37 @@ header .header__section {
   color: #000000;
   margin-bottom: 40px;
 }
-
-.contact__details {
+.contact__container .contact__information .contact__details {
   display: flex;
 }
-
-.contact__email,
-.contact__phone {
+.contact__container .contact__information .contact__details .contact__email,
+.contact__container .contact__information .contact__details .contact__phone {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.375rem;
   color: #A5A5A5;
 }
-
-.contact__email {
+.contact__container .contact__information .contact__details .contact__email {
   margin-right: 20px;
 }
-
-/**** contact form  ****/
-.form {
+.contact__container .form {
   max-width: 440px;
   display: flex;
   flex-direction: column;
   margin-left: 113px;
+  /**** contact checkbox  ****/
+  /**** contact button  ****/
 }
-
-.form__field {
+.contact__container .form .form__field {
   display: flex;
   flex-direction: column;
 }
-
-.form__field:nth-child(2) {
+.contact__container .form .form__field:nth-child(2) {
   margin-top: 42px;
   margin-bottom: 30px;
 }
-
-.form__label {
+.contact__container .form .form__field .form__label {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 0.6875rem;
@@ -1318,32 +1310,36 @@ header .header__section {
   color: #08A6E4;
   text-align: left;
 }
-
-.form__input {
+.contact__container .form .form__field .form__input {
   height: 43px;
   border: none;
   border-bottom: 1px solid #707070;
 }
-
-/**** contact checkbox  ****/
-.form__permission {
+.contact__container .form .form__permission {
   margin-bottom: 20px;
 }
-
-.form__checkbox input {
+.contact__container .form .form__permission .form__checkbox input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
   height: 0;
   width: 0;
 }
-
-.form__checkbox {
+.contact__container .form .form__permission .form__checkbox input:checked + .checkbox {
+  background-image: url("../assets/Checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contact__container .form .form__permission .form__checkbox input:checked + .checkbox {
+  background-image: url("../assets/Checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contact__container .form .form__permission .form__checkbox {
   cursor: pointer;
   display: flex;
 }
-
-.checkbox {
+.contact__container .form .form__permission .form__checkbox .checkbox {
   height: 24px;
   flex-shrink: 0;
   flex-basis: 24px;
@@ -1351,14 +1347,7 @@ header .header__section {
   border-radius: 4px;
   margin-right: 10px;
 }
-
-.form__checkbox input:checked + .checkbox {
-  background-image: url("../assets/Checkmark.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.checkbox__text {
+.contact__container .form .form__permission .form__checkbox .checkbox__text {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 0.75rem;
@@ -1366,9 +1355,7 @@ header .header__section {
   text-align: left;
   color: #707070;
 }
-
-/**** contact button  ****/
-.contact__button {
+.contact__container .form .contact__button {
   display: inline-block;
   padding: 20px 97px;
   cursor: pointer;
