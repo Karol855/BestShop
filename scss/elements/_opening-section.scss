@@ -21,8 +21,9 @@
         color: map.get($colors, color-black);
         margin-bottom: 20px;
         margin-top: 130px;
+
         @include mobile {
-          margin-top: 100px;
+          margin-top: 80px;
         }
       }
 
@@ -32,6 +33,7 @@
         font-size: 1rem;
         line-height: 1.375rem;
         margin-bottom: 38px;
+
         @include mobile {
           padding: 0 70px;
           margin-bottom: 28px;
@@ -46,6 +48,7 @@
         border-radius: 40px;
         box-shadow: map.get($colors, color-primary-shadow) 5px 10px 14px;
         display: inline-block;
+
         @include mobile {
           padding: 22px 92px;
           display: block;

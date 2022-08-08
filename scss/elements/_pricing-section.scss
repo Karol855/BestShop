@@ -11,11 +11,14 @@
     align-items: center;
 
     @include desktop {
-      margin: 100px auto;
+      width: 100%;
+      padding: 0 15px;
+      margin: 50px auto;
     }
     @include tablet {
       width: 100%;
       padding: 0 15px;
+      margin: 50px auto;
     }
 
     /**** pricing headline  ****/
@@ -57,6 +60,9 @@
           margin-bottom: 50px;
           justify-content: center;
           padding: 25px 10px 0 10px;
+        }
+        @include smallMobile {
+          padding: 20px 5px 0 5px;
         }
 
         &:first-child {
@@ -122,6 +128,10 @@
         }
         &:nth-child(2) > .pricing__package > .pricing__type {
           font-size: 1.3125rem;
+
+          @include smallMobile {
+            font-size: 0.9rem;
+          }
         }
         &:nth-child(2) >.pricing__details-list {
           margin-bottom: 27px;
@@ -166,6 +176,10 @@
             width: 50%;
             margin: 0;
           }
+          @include smallMobile {
+            width: 35%;
+            margin-right: 10px;
+          }
 
           .pricing__type {
             font-family: $font-raleway;
@@ -173,18 +187,30 @@
             font-size: 1.25rem;
             margin-bottom: 14px;
             /*line-height: 0.0625rem;*/
+
+            @include smallMobile {
+              font-size: 0.9rem;
+            }
           }
           .pricing__price {
             font-family: $font-open-sans;
             font-weight: 300;
             font-size: 2.875rem;
             /*line-height: 0.125rem;*/
+
+            @include smallMobile {
+              font-size: 2rem;
+            }
           }
           .pricing__limit {
             font-family: $font-raleway;
             font-weight: 700;
-            font-size: 12px;
+            font-size: 0.75rem;
             color: map.get($colors, color-black);
+
+            @include smallMobile {
+              font-size: 0.65rem;
+            }
           }
         }
 
@@ -200,6 +226,10 @@
             margin-bottom: 5px;
           }
 
+          @include smallMobile {
+            min-width: 120px;
+          }
+
           .pricing__items {
             font-family: $font-open-sans;
             font-weight: 400;
@@ -210,6 +240,10 @@
             @include desktop {
               line-height: 2.125rem;
               align-self: flex-start;
+            }
+
+            @include smallMobile {
+              font-size: 0.7rem;
             }
           }
         }

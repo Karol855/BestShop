@@ -2,6 +2,7 @@
 $desktop:1352px;
 $tablet: 1024px;
 $mobile: 792px;
+$small-mobile: 375px;
 
 // MIXINS
 @mixin desktop {
@@ -17,6 +18,12 @@ $mobile: 792px;
 
 @mixin tablet {
   @media (max-width:#{$tablet}) {
+    @content;
+  }
+}
+
+@mixin smallMobile {
+  @media (max-width:#{$small-mobile}) {
     @content;
   }
 }
