@@ -15,3 +15,4 @@
 
 ### Link to completed BestShop project:
 
+https://karol855.github.io/BestShop/
