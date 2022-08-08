@@ -585,7 +585,7 @@ header .header__section {
 }
 @media (max-width: 792px) {
   .opening__container .opening__headline {
-    margin-top: 100px;
+    margin-top: 80px;
   }
 }
 .opening__container .opening__text {
@@ -652,6 +652,12 @@ header .header__section {
     padding: 0 15px;
   }
 }
+@media (max-width: 1352px) {
+  .benefits__container {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
 .benefits__container .benefit__box, .benefits__container .benefit__box--separated {
   /**** benefits articles  ****/
 }
@@ -659,12 +665,11 @@ header .header__section {
   max-width: 416px;
   display: flex;
   flex-direction: column;
-  margin-left: 35px;
+  margin: 90px 35px;
 }
 @media (max-width: 1024px) {
   .benefits__container .benefit__box .benefit__article, .benefits__container .benefit__box--separated .benefit__article {
-    margin-left: 30px;
-    margin-bottom: 30px;
+    margin: 30px 0;
     max-width: 100%;
   }
 }
@@ -695,7 +700,6 @@ header .header__section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 370px;
   width: 100%;
   background-color: #ffffff;
   border: 1px solid #E8E9ED;
@@ -707,6 +711,7 @@ header .header__section {
 @media (max-width: 1024px) {
   .benefits__container .benefit__box {
     flex-direction: column-reverse !important;
+    padding: 0 15px;
   }
 }
 .benefits__container .benefit__box:nth-child(2) {
@@ -774,7 +779,7 @@ header .header__section {
   }
 }
 .benefits__container .benefit__box .benefit__square--red .macbook__image {
-  height: 219px;
+  height: auto;
   width: 386px;
   position: absolute;
   top: 70px;
@@ -820,7 +825,7 @@ header .header__section {
   }
 }
 .benefits__container .benefit__box .benefit__circle--blue .iphone__image {
-  height: 328px;
+  height: auto;
   width: 426px;
   position: absolute;
 }
@@ -843,7 +848,6 @@ header .header__section {
 }
 .benefits__container .benefit__box--separated .benefit__box--content {
   width: 624px;
-  height: 370px;
   background-color: #ffffff;
   border: 1px solid #E8E9ED;
   border-radius: 5px;
@@ -852,6 +856,7 @@ header .header__section {
   .benefits__container .benefit__box--separated .benefit__box--content {
     width: 100%;
     height: 100%;
+    padding: 0 15px;
   }
 }
 .benefits__container .benefit__box--separated .benefit__box--content .trumpet__article {
@@ -878,7 +883,6 @@ header .header__section {
 }
 .benefits__container .benefit__box--separated .benefit__square--green {
   width: 440px;
-  height: 370px;
   background-color: #55DFB4;
   border: 1px solid #E8E9ED;
   border-radius: 5px;
@@ -1017,13 +1021,16 @@ header .header__section {
 }
 @media (max-width: 1352px) {
   .pricing__container {
-    margin: 100px auto;
+    width: 100%;
+    padding: 0 15px;
+    margin: 50px auto;
   }
 }
 @media (max-width: 1024px) {
   .pricing__container {
     width: 100%;
     padding: 0 15px;
+    margin: 50px auto;
   }
 }
 .pricing__container .pricing__headline {
@@ -1069,6 +1076,11 @@ header .header__section {
     margin-bottom: 50px;
     justify-content: center;
     padding: 25px 10px 0 10px;
+  }
+}
+@media (max-width: 375px) {
+  .pricing__container .pricing__columns .pricing__box {
+    padding: 20px 5px 0 5px;
   }
 }
 .pricing__container .pricing__columns .pricing__box:first-child {
@@ -1139,6 +1151,11 @@ header .header__section {
 .pricing__container .pricing__columns .pricing__box:nth-child(2) > .pricing__package > .pricing__type {
   font-size: 1.3125rem;
 }
+@media (max-width: 375px) {
+  .pricing__container .pricing__columns .pricing__box:nth-child(2) > .pricing__package > .pricing__type {
+    font-size: 0.9rem;
+  }
+}
 .pricing__container .pricing__columns .pricing__box:nth-child(2) > .pricing__details-list {
   margin-bottom: 27px;
 }
@@ -1180,6 +1197,12 @@ header .header__section {
     margin: 0;
   }
 }
+@media (max-width: 375px) {
+  .pricing__container .pricing__columns .pricing__box .pricing__package {
+    width: 35%;
+    margin-right: 10px;
+  }
+}
 .pricing__container .pricing__columns .pricing__box .pricing__package .pricing__type {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -1187,17 +1210,32 @@ header .header__section {
   margin-bottom: 14px;
   /*line-height: 0.0625rem;*/
 }
+@media (max-width: 375px) {
+  .pricing__container .pricing__columns .pricing__box .pricing__package .pricing__type {
+    font-size: 0.9rem;
+  }
+}
 .pricing__container .pricing__columns .pricing__box .pricing__package .pricing__price {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 2.875rem;
   /*line-height: 0.125rem;*/
 }
+@media (max-width: 375px) {
+  .pricing__container .pricing__columns .pricing__box .pricing__package .pricing__price {
+    font-size: 2rem;
+  }
+}
 .pricing__container .pricing__columns .pricing__box .pricing__package .pricing__limit {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #000000;
+}
+@media (max-width: 375px) {
+  .pricing__container .pricing__columns .pricing__box .pricing__package .pricing__limit {
+    font-size: 0.65rem;
+  }
 }
 .pricing__container .pricing__columns .pricing__box .pricing__details-list {
   display: flex;
@@ -1211,6 +1249,11 @@ header .header__section {
     margin-bottom: 5px;
   }
 }
+@media (max-width: 375px) {
+  .pricing__container .pricing__columns .pricing__box .pricing__details-list {
+    min-width: 120px;
+  }
+}
 .pricing__container .pricing__columns .pricing__box .pricing__details-list .pricing__items {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -1222,6 +1265,11 @@ header .header__section {
   .pricing__container .pricing__columns .pricing__box .pricing__details-list .pricing__items {
     line-height: 2.125rem;
     align-self: flex-start;
+  }
+}
+@media (max-width: 375px) {
+  .pricing__container .pricing__columns .pricing__box .pricing__details-list .pricing__items {
+    font-size: 0.7rem;
   }
 }
 .pricing__container .pricing__columns .pricing__box .pricing_buttons {
@@ -1258,6 +1306,7 @@ header .header__section {
 }
 @media (max-width: 1024px) {
   .contact__container {
+    width: 100%;
     flex-direction: column;
     align-items: center;
     padding: 50px 15px;
@@ -1306,7 +1355,7 @@ header .header__section {
 .contact__container .contact__information .contact__details .contact__email,
 .contact__container .contact__information .contact__details .contact__phone {
   font-family: "Open Sans", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1rem;
   line-height: 1.375rem;
   color: #A5A5A5;
@@ -1321,7 +1370,7 @@ header .header__section {
   margin-right: 20px;
 }
 .contact__container .form {
-  max-width: 440px;
+  width: 440px;
   display: flex;
   flex-direction: column;
   margin-left: 113px;
@@ -1331,7 +1380,6 @@ header .header__section {
 @media (max-width: 1024px) {
   .contact__container .form {
     width: 100%;
-    max-width: 100%;
     margin-left: 0;
     margin-top: 20px;
   }
