@@ -479,7 +479,7 @@ header .header__section {
 
 .nav__list {
   display: flex;
-  gap: 95px;
+  gap: 80px;
 }
 .nav__list .nav__link {
   color: #A5A5A5;
