@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function () {
+
 function Calculator(form, summary) {
     this.prices = {
         products: 2.5,
@@ -141,7 +143,7 @@ Calculator.prototype.checkboxEvent = function (e) {
 };
 
 
-document.addEventListener("DOMContentLoaded", function () {
+
     const form = document.querySelector(".calc__form");
     const summary = document.querySelector(".calc__summary");
 
