@@ -69,3 +69,17 @@ Calculator.prototype.updateSummary = function (id, calc, total, callback) {
     }
 
 };
+
+Calculator.prototype.selectEvent = function (e) {
+    this.form.package.classList.toggle("open");
+
+    const value = typeof e.target.dataset.value !== "undefined" ? e.target.dataset.value : "";
+    const text = typeof e.target.dataset.value !== "undefined" ? e.target.innerText : "Choose package";
+
+    if (value.length > 0) {
+        this.form.package.dataset.value = value;
+        this.form.package.querySelector(".select__input").innerText = text;
+
+        this.updateSummary("package", text, this.prices.package[value]);
+    }
+};
